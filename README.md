@@ -45,98 +45,117 @@ PI-8 Learning Week plans:
 # 📱 React Native Mobile Architecture – 2-Week Learning Plan
 
 ## 🎯 Objective
-Build strong foundational knowledge and hands-on experience with mobile architecture patterns in React Native including modular structure, navigation, state management, DI, testing, and CI/CD.
+Gain practical understanding of scalable architecture patterns in React Native. Learn how to structure mobile apps cleanly using best practices such as modular design, navigation flow, state management, testing, and CI/CD.
 
 ---
 
 ## 📅 Week 1: Foundations of Mobile Architecture
 
 ### ✅ Day 1: Introduction to Mobile Architecture
-- Understand Clean Architecture, MVVM, MVC, MVI
-- Map architecture principles to React Native
-- 📚 Resources:
-  - [Clean Architecture in React Native – YouTube](https://www.youtube.com/results?search_query=react+native+clean+architecture)
+- Understand Clean Architecture, MVVM, MVC, and MVI
+- Learn how these apply to React Native
+- 📚 Watch: [React Native Clean Architecture - YouTube](https://www.youtube.com/results?search_query=react+native+clean+architecture)
 - 📝 Task: Summarize Clean Architecture in your own words
 
 ---
 
 ### ✅ Day 2: Project Structure & Modularization
-- Explore modular project structures (`/features`, `/core`, `/shared`, etc.)
-- 📚 Resource: [Modular React Native Architecture](https://medium.com/@AlexMiranda/modular-react-native-architecture-1dfc6bcf4d84)
-- 🛠️ Task: Set up a sample React Native project with a modular structure
+- Study modular folder structure (`/features`, `/core`, `/shared`, etc.)
+- 📚 Read: [Modular React Native Architecture](https://medium.com/@AlexMiranda/modular-react-native-architecture-1dfc6bcf4d84)
+- 🛠️ Task: Create a modular structure for a new RN project
 
 ---
 
 ### ✅ Day 3: Navigation Architecture
-- Deep dive into React Navigation (stack, tab, drawer)
-- Learn how to structure navigation for authenticated vs. unauthenticated flows
-- 🛠️ Task: Implement stack + tab navigation with authentication flow
+- Learn about React Navigation (stack, tab, drawer)
+- Structure navigation for auth vs. main app flow
+- 🛠️ Task: Build a tab+stack-based auth navigation flow
 
 ---
 
 ### ✅ Day 4: State Management Patterns
-- Compare Redux, Context API, Zustand, MobX
-- 📚 Resource: [State Management in React Native](https://blog.logrocket.com/react-native-state-management-comparison/)
-- 🛠️ Task: Implement Context + Reducer pattern and compare with Redux
+- Compare Context API, Redux, Zustand, and MobX
+- 📚 Read: [State Management in React Native](https://blog.logrocket.com/react-native-state-management-comparison/)
+- 🛠️ Task: Implement and compare Context + Reducer vs Redux
 
 ---
 
 ### ✅ Day 5: Dependency Injection & Services Layer
-- Understand the purpose of services, repositories, and use cases
-- Explore simple DI approaches or libraries like `inversify`
-- 🛠️ Task: Create a `UserService` and inject it into a feature
+- Understand abstraction via services and repositories
+- Optional: Explore DI libraries (`inversify`, etc.)
+- 🛠️ Task: Create a `UserService` and inject it into a screen
 
 ---
 
-### 📌 Weekend Challenge
-Build a basic **Notes App** with layered architecture:
-
-
+### 📌 Weekend Mini-Project
+Build a basic **"Notes App"** that uses:
 
 ---
 
-## 📅 Week 2: Real-World Application & Advanced Concepts
+## 📅 Week 2: Advanced Concepts & Real-World Applications
 
 ### ✅ Day 6: Testing Architecture
-- Learn about unit, integration, and e2e testing
+- Learn about unit tests, integration tests, and e2e tests
 - Tools: Jest, React Native Testing Library
-- 🛠️ Task: Write unit tests for a service and a screen component
+- 🛠️ Task: Write tests for one service and one UI component
 
 ---
 
-### ✅ Day 7: Offline-First Architecture
-- Explore AsyncStorage, SQLite, and react-query for caching
-- 🛠️ Task: Cache notes locally using react-query + AsyncStorage
+### ✅ Day 7: Error Handling & Logging
+- Create global error boundaries
+- Integrate Sentry or Reactotron for logging
+- 🛠️ Task: Add Sentry and handle API failure gracefully
 
 ---
 
-### ✅ Day 8: Error Handling & Logging
-- Centralize error boundaries and integrate crash reporting
-- Tools: Sentry, Reactotron
-- 🛠️ Task: Add a global error handler + Sentry integration
+### ✅ Day 8: Clean Code & Linting
+- Enforce clean code practices
+- Set up ESLint, Prettier, Husky, and commit hooks
+- 🛠️ Task: Refactor a feature to follow clean separation of concerns
 
 ---
 
-### ✅ Day 9: Clean Code & Linting
-- Learn clean code practices in RN
-- Setup ESLint, Prettier, and Husky
-- 🛠️ Task: Refactor a feature module using clean architecture principles
+### ✅ Day 9: CI/CD Setup
+- Learn about GitHub Actions, Expo EAS, Bitrise, Fastlane
+- 🛠️ Task: Configure a GitHub Action for linting + testing on PR
 
 ---
 
-### ✅ Day 10: CI/CD Pipeline Setup
-- Learn basics of CI/CD in mobile using GitHub Actions, EAS, or Bitrise
-- 🛠️ Task: Setup a GitHub Action to lint and run tests on pull request
+### ✅ Day 10: UI Scalability & Theme Architecture
+- Learn about theme providers and design systems
+- Structure scalable UI components with props and variants
+- 🛠️ Task: Build a reusable button and form input component
 
 ---
 
-### 📌 Final Weekend Capstone Project
+## ⚡ Second Priority (Optional/Advanced Topics)
+
+### 📦 Offline-First Architecture (Pick any 1 day)
+- Concepts: Caching strategies, offline storage, sync strategies
+- Tools: `AsyncStorage`, `react-query`, SQLite
+- 📚 Read:
+  - [Offline Storage in React Native](https://reactnative.dev/docs/asyncstorage)
+  - [Offline Sync Patterns – Firebase/REST APIs]
+- 🛠️ Task: Extend your Notes App to:
+  - Cache notes locally with AsyncStorage or SQLite
+  - Show offline/online UI indicator
+
+---
+
+### 🧪 Optional: E2E Testing with Detox
+- Setup Detox or Appium for device testing
+- 🛠️ Task: Write 1 flow test: “create → edit → delete note”
+
+---
+
+### 🚀 Final Weekend Capstone
 Extend your **Notes App** to include:
-- ✅ Offline support
-- ✅ Error logging (Sentry or fallback)
-- ✅ Modular folder structure
-- ✅ Unit tests for at least 2 modules
-- ✅ Basic CI pipeline with lint/test check
+- ✅ Modular architecture
+- ✅ Clean separation of presentation/domain/data
+- ✅ Global error handling & logging
+- ✅ Linting, testing, CI on PRs
+- ✅ (Optional) Offline-first logic
+- ✅ (Optional) Theme and design system setup
 
 ---
 
@@ -144,7 +163,8 @@ Extend your **Notes App** to include:
 
 ### 📘 Articles
 - [React Native Clean Architecture](https://medium.com/@leandromarino/react-native-clean-architecture-87c1780e2443)
-- [MVVM Architecture in React Native](https://dev.to/abdulbasit313/mvvm-architecture-pattern-in-react-native-23in)
+- [MVVM in React Native](https://dev.to/abdulbasit313/mvvm-architecture-pattern-in-react-native-23in)
+- [State Management Guide](https://blog.logrocket.com/react-native-state-management-comparison/)
 
 ### 📺 Videos
 - Academind – *React Native Architecture Best Practices*
@@ -152,5 +172,5 @@ Extend your **Notes App** to include:
 
 ### 📦 GitHub Boilerplates
 - [TheCodingMachine/react-native-boilerplate](https://github.com/thecodingmachine/react-native-boilerplate)
-- [infiniteRed/ignite](https://github.com/infinitered/ignite)
+- [InfiniteRed/ignite](https://github.com/infinitered/ignite)
 
