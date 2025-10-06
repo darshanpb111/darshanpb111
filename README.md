@@ -5,7 +5,7 @@
 
 ## 🚀 About Me
 
-- 👨‍💻 **Software Engineer I**
+- 👨‍💻 **Software Engineer II**
 - 🌟 Passionate about building modern web applications
 - 💡 Always learning and growing in the world of tech
 
